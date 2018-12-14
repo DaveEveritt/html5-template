@@ -7,9 +7,9 @@
 </head>
 <body>
   <h1>HTML5 template, slot and shadow DOM</h1>
-  <p>
-    See <a href="https://www.hongkiat.com/blog/html-template-slow-tag-shadow-dom/">How to Use HTML &lt;template&gt; &amp; &lt;slot&gt; With Shadow DOM</a>
-  </p>
+
+  <p>This example uses one template to generate two tables with different data.</p>
+  
   <p>Tested in Chrome >= v69.0, >= Safari v12.0, Firefox >= v63</p>
 
   <template>
@@ -41,7 +41,7 @@
       <tr>
         <td><slot name='value-2.1'></slot></td>
         <td><slot name='value-2.2'></slot></td>
-        </tr>
+      </tr>
     </table>
   </template>
 
@@ -62,6 +62,8 @@
     <span slot='value-2.1'>Table 2 slot D.1</span>
     <span slot='value-2.2'>Table 2 slot D.2</span>
   </div>
+  
+  <p><small>See <a href="https://www.hongkiat.com/blog/html-template-slow-tag-shadow-dom/">How to Use HTML &lt;template&gt; &amp; &lt;slot&gt; With Shadow DOM</a></small></p>
   
   <script src="script.js"></script>
 
